@@ -1,7 +1,7 @@
 import platform
 import os
-if platform.system() == "Linux":
-    os.environ['PYOPENGL_PLATFORM'] = 'egl'
+# if platform.system() == "Linux":
+    # os.environ['PYOPENGL_PLATFORM'] = 'egl'
 
 from typing import Dict, List, Tuple
 from dataclasses import dataclass
