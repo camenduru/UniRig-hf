@@ -6,7 +6,6 @@ from typing import Tuple
 
 import gradio as gr
 import lightning as L
-import spaces
 import torch
 import yaml
 from box import Box
@@ -280,7 +279,6 @@ def merge_results_python(source_file: str, target_file: str, output_file: str) -
     
     return str(output_path.resolve())
 
-@spaces.GPU()
 def main(input_file: str, seed: int = 12345) -> Tuple[str, list]:
     """
     Run the rigging pipeline based on selected mode.
