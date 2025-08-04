@@ -405,4 +405,4 @@ if __name__ == "__main__":
     app = create_app()
     
     # Launch configuration
-    app.queue().launch()
+    app.queue().launch(share=True)
